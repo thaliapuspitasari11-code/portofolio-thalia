@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thalia Puspita Sari, S.Kom. - Administration, Frontend Developer & UI/UX Designer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950 min-h-screen">
+
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3 group">
+                <!-- Foto Wajah Pengganti Logo TS -->
+                <div class="w-11 h-11 rounded-xl overflow-hidden border-2 border-cyan-500/50 shadow-md group-hover:border-cyan-400 transition">
+                    <img src="assets/fotothalia.png" alt="Thalia Puspita Sari" class="w-full h-full object-cover cursor-pointer" onclick="window.open('assets/fotothalia.png', '_blank')" title="Klik untuk memperbesar foto">
+                </div>
+                <div>
+                    <span class="font-bold tracking-tight text-white block text-sm group-hover:text-cyan-400 transition">THALIA PUSPITA SARI</span>
+                    <span class="text-xs text-cyan-400 font-mono">Administration, Frontend & UI/UX</span>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+                <a href="#tentang" class="hover:text-cyan-400 transition">Tentang</a>
+                <a href="#pendidikan" class="hover:text-cyan-400 transition">Pendidikan & Pencapaian</a>
+                <a href="#proyek" class="hover:text-cyan-400 transition">Proyek</a>
+                <a href="#keahlian" class="hover:text-cyan-400 transition">Keahlian</a>
+                <a href="#pengalaman" class="hover:text-cyan-400 transition">Pengalaman</a>
+            </div>
+            <a href="#dokumen" class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs transition shadow-md">
+                Dokumen & CV
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="max-w-7xl mx-auto px-6 pt-32 pb-16">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <span class="inline-block px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                    Administration, Frontend Development & UI/UX Design Specialist
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Thalia Puspita Sari,<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">S.Kom.</span>
+                </h1>
+                <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                    Lulusan S1 Teknik Informatika berdedikasi tinggi dengan fokus minat pada <strong>Administration</strong>, <strong>Frontend Development</strong> dan <strong>UI/UX Design</strong>. Memiliki pengetahuan dasar dalam membangun aplikasi web berbasis HTML, CSS, PHP, CodeIgniter & MySQL, serta terampil merancang antarmuka intuitif dan responsif.
+                </p>
+                <div class="grid sm:grid-cols-2 gap-3 text-sm text-slate-300 font-mono pt-2">
+                    <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-cyan-400"></i>
+                        <span class="truncate">thaliapuspitasari11@gmail.com</span>
+                    </div>
+                    <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-cyan-400"></i>
+                        <span>0821-8203-5887</span>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="w-full max-w-md bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-2xl space-y-4">
+                    <div class="flex items-center gap-2 pb-3 border-b border-slate-800">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        <span class="text-xs font-mono text-cyan-400 ml-2">profile_data.jsx</span>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 font-mono text-xs text-slate-300 space-y-1">
+                        <div><span class="text-cyan-400">const</span> profile = &#123;</div>
+                        <div class="pl-4">name: <span class="text-emerald-400">"Thalia Puspita Sari"</span>,</div>
+                        <div class="pl-4">degree: <span class="text-emerald-400">"S1 Teknik Informatika"</span>,</div>
+                        <div class="pl-4">campus: <span class="text-emerald-400">"ISB Atma Luhur"</span>,</div>
+                        <div class="pl-4">focus: <span class="text-emerald-400">"Frontend & UI/UX"</span></div>
+                        <div>&#125;;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="tentang" class="max-w-7xl mx-auto px-6 py-12">
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-10 space-y-4">
+            <div class="flex items-center gap-2 text-cyan-400 text-sm font-semibold uppercase tracking-wider">
+                <i class="fa-solid fa-user"></i> Profil Profesional
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white">Tentang Saya</h2>
+            <p class="text-slate-300 leading-relaxed text-justify text-sm sm:text-base">
+                Lulusan S1 Teknik Informatika dengan minat pada bidang <strong>Frontend Development</strong> dan <strong>UI/UX Design</strong>. Memiliki pemahaman dasar dalam pengembangan aplikasi berbasis web menggunakan HTML, CSS, PHP, CodeIgniter, MySQL, dan Visual Studio Code, serta ketertarikan dalam merancang antarmuka yang responsif, intuitif, dan mudah digunakan. Memiliki pengalaman mengembangkan proyek sistem informasi selama masa perkuliahan. Pribadi yang teliti, kreatif, komunikatif, bertanggung jawab, dan memiliki kemauan belajar yang tinggi, serta mampu bekerja secara individu maupun dalam tim.
+            </p>
+        </div>
+    </section>
+
+    <!-- Pendidikan-->
+    <section id="pendidikan" class="max-w-7xl mx-auto px-6 py-12">
+        <div class="space-y-6">
+            <div class="flex items-center gap-2 text-cyan-400 text-sm font-semibold uppercase tracking-wider">
+                <i class="fa-solid fa-graduation-cap"></i> Riwayat Akademik
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white">Pendidikan & Pencapaian</h2>
+            <div class="grid md:grid-cols-12 gap-6">
+                <div class="md:col-span-8 bg-slate-900 border border-slate-800 rounded-3xl p-8 space-y-4">
+                    <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Pendidikan Strata 1 (S1)</span>
+                    <h3 class="text-xl font-bold text-white">S1 Teknik Informatika</h3>
+                    <p class="text-cyan-400 text-sm font-medium">Institut Sains dan Bisnis Atma Luhur - Pangkalpinang</p>
+                    <p class="text-xs font-mono text-slate-400">Periode Kuliah: Sep 2022 - Okt 2026</p>
+                    
+                    <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-3">
+                        <div class="flex items-center gap-2 text-emerald-400 text-sm font-semibold">
+                            <i class="fa-solid fa-certificate"></i> Ijazah S1 & Transkrip Nilai
+                        </div>
+                        <p class="text-xs text-slate-300">
+                            Resmi lulus pada <strong>17 Oktober 2026</strong> dengan pencapaian Indeks Prestasi Kumulatif (IPK) <strong>3.94 / 4.00</strong>.
+                        </p>
+                        <!-- Tombol untuk membuka atau mendownload ijazah -->
+                        <div class="pt-2">
+                            <a href="assets/ijazah.pdf" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+                                <i class="fa-solid fa-eye"></i> Lihat Dokumen Ijazah
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-4 bg-gradient-to-b from-cyan-500/10 to-slate-900 border border-cyan-500/30 rounded-3xl p-8 space-y-3 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-mono text-cyan-400 uppercase">Prestasi Akademik</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Beasiswa Yayasan Khouw Kalbe</h3>
+                        <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                            Penerima Beasiswa Prestasi BESTARI dari Yayasan Khouw Kalbe (2023), melalui seleksi kompetitif berkat komitmen terhadap prestasi akademik.
+                        </p>
+                        <div class="pt-2">
+                            <a href="assets/bukti-penerima-beasiswa.pdf" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+                                <i class="fa-solid fa-eye"></i> Lihat Dokumen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek & Pencapaian -->
+    <section id="proyek" class="max-w-7xl mx-auto px-6 py-12">
+        <div class="space-y-6">
+            <div class="flex items-center gap-2 text-cyan-400 text-sm font-semibold uppercase tracking-wider">
+                <i class="fa-solid fa-laptop-code"></i> Portfolio Showcase
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white">Proyek Sistem Informasi & UI/UX</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4">
+                    <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Web Application Project</span>
+                    <h3 class="text-xl font-bold text-white">Sistem Informasi Berbasis Web (PHP & CodeIgniter)</h3>
+                    <p class="text-sm text-slate-300">Pengembangan proyek sistem informasi akademik/organisasi selama perkuliahan dengan desain antarmuka yang responsif dan terstruktur.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4">
+                    <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">UI/UX Design Concept</span>
+                    <h3 class="text-xl font-bold text-white">UI/UX Prototype Dashboard & Interface</h3>
+                    <p class="text-sm text-slate-300">Perancangan tata letak antarmuka aplikasi yang intuitif, ramah pengguna, dan estetis menggunakan Canva dan prinsip desain modern.</p>
+                </div>
+            </div>
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4">
+                    <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Data Analysis & Research</span>
+                    <h3 class="text-xl font-bold text-white">HAKI & Publikasi Jurnal</h3>
+                    <p class="text-sm text-slate-300">Penulis jurnal ilmiah berjudul <strong>"XGBoost-Based Sentiment Analysis for Evaluating Customer Satisfaction at Hotel Puri Ansel"</strong> serta kepemilikan hak kekayaan intelektual (HAKI) resmi.</p>
+                    <!-- Detail Pendekatan STAR (Situation, Task, Action, Result) -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+        <!-- Situation -->
+        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800/80 space-y-2">
+            <div class="text-cyan-400 font-bold text-xs uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-triangle-exclamation"></i> Situation
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+                Ulasan online hotel dalam jumlah besar sering tidak terstruktur dan sulit dievaluasi secara manual untuk mengidentifikasi perbaikan layanan di Hotel Puri Ansel.
+            </p>
+        </div>
+
+        <!-- Task -->
+        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800/80 space-y-2">
+            <div class="text-cyan-400 font-bold text-xs uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-list-check"></i> Task
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+                Merancang dan membangun model analisis sentimen otomatis untuk mengklasifikasikan ulasan pelanggan secara akurat guna menghasilkan wawasan tingkat kepuasan layanan.
+            </p>
+        </div>
+
+        <!-- Action -->
+        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800/80 space-y-2">
+            <div class="text-cyan-400 font-bold text-xs uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-gears"></i> Action
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+                Menerapkan algoritma <strong>XGBoost</strong>, melakukan preprocessing teks data, tokenisasi, serta evaluasi performa model klasifikasi sentimen secara mendalam.
+            </p>
+        </div>
+
+        <!-- Result -->
+        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800/80 space-y-2">
+            <div class="text-cyan-400 font-bold text-xs uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-chart-line"></i> Result
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+                Menghasilkan model prediksi akurat yang sukses didokumentasikan ke dalam jurnal ilmiah berstandar serta memperoleh sertifikat hak kekayaan intelektual (HAKI) resmi.
+            </p>
+        </div>
+    </div>
+                    <div class="pt-2">
+                            <a href="assets/haki.pdf" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+                                <i class="fa-solid fa-eye"></i> Lihat HAKI
+                            </a>
+                            <!-- Tombol untuk menuju Link Web Jurnal Resmi -->
+                            <a href="https://j-ilkominfo.org/index.php/ejournalaikom/article/view/484" target="_blank" class="px-3 py-1.5 bg-slate-900 hover:bg-slate-800 text-cyan-400 font-semibold text-xs rounded-xl border border-slate-700 transition inline-flex items-center gap-1.5">
+                                <i class="fa-solid fa-globe"></i> Buka Link Web Jurnal
+                            </a>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="keahlian" class="max-w-7xl mx-auto px-6 py-12">
+        <div class="space-y-6">
+            <div class="flex items-center gap-2 text-cyan-400 text-sm font-semibold uppercase tracking-wider">
+                <i class="fa-solid fa-code"></i> Hard & Soft Skills
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white">Keahlian & Kompetensi</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4">
+                    <h3 class="text-lg font-bold text-cyan-400">Hard Skills</h3>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">HTML & CSS</span>
+                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">PHP & CodeIgniter</span>
+                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">MySQL Database</span>
+                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">UI/UX Design</span>
+                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">Visual Studio Code</span>
+                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">Canva & Office Suite</span>
+                    </div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4">
+                    <h3 class="text-lg font-bold text-cyan-400">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">Komunikasi</span>
+                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">Kerja Sama Tim</span>
+                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">Berpikir Analitis</span>
+                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">Manajemen Waktu</span>
+                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">Ketelitian & Adaptabilitas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengalaman Magang & Organisasi -->
+    <section id="pengalaman" class="max-w-7xl mx-auto px-6 py-12">
+        <div class="space-y-6">
+            <div class="flex items-center gap-2 text-cyan-400 text-sm font-semibold uppercase tracking-wider">
+                <i class="fa-solid fa-briefcase"></i> Pengalaman Praktis
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white">Magang & Organisasi</h2>
+            <div class="space-y-6">
+                <!-- Magang Ombudsman -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 space-y-3">
+                    <div class="flex justify-between flex-wrap gap-2">
+                        <h3 class="text-xl font-bold text-white">Mahasiswa Magang - Penerimaan & Verifikasi Laporan (PVL)</h3>
+                        <span class="text-xs font-mono text-cyan-400 bg-slate-950 px-3 py-1 rounded-full border border-slate-800">Sep 2025 - Jan 2026</span>
+                    </div>
+                    <p class="text-cyan-400 text-sm font-medium">Ombudsman RI Perwakilan Kepulauan Bangka Belitung</p>
+                    <p class="text-slate-300 text-sm leading-relaxed text-justify">
+                        Selama magang pada bagian Penerimaan dan Verifikasi Laporan (PVL), saya membantu proses penerimaan laporan masyarakat, verifikasi dokumen, administrasi, serta memberikan pelayanan awal kepada masyarakat secara profesional dan teliti.
+                    </p>
+                    <div class="pt-2">
+                            <a href="assets/sertifikat-magang.jpeg" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+                                <i class="fa-solid fa-eye"></i> Lihat Sertifikat
+                            </a>
+                    </div>
+                </div>
+                <!-- Organisasi DPM & HIMTI -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-3">
+                        <span class="text-xs font-mono text-cyan-400">Jan 2025 - Jan 2026</span>
+                        <h3 class="text-lg font-bold text-white">Ketua Komisi I Legislasi</h3>
+                        <p class="text-xs text-slate-400">Dewan Perwakilan Mahasiswa (DPM) ISB Atma Luhur</p>
+                        <ul class="list-disc list-inside text-xs text-slate-300 space-y-1">
+                            <li>Mengoordinasikan penyusunan dan evaluasi peraturan organisasi.</li>
+                            <li>Memimpin rapat dan program kerja Komisi I Bidang Legislasi.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-3">
+                        <span class="text-xs font-mono text-cyan-400">Sep 2023 - Jul 2024</span>
+                        <h3 class="text-lg font-bold text-white">Ketua Hubungan Masyarakat (HUMAS)</h3>
+                        <p class="text-xs text-slate-400">Himpunan Mahasiswa Teknik Informatika (HIMTI)</p>
+                        <ul class="list-disc list-inside text-xs text-slate-300 space-y-1">
+                            <li>Memimpin dan mengoordinasikan kegiatan bidang HUMAS.</li>
+                            <li>Menjalin komunikasi & kerja sama dengan pihak internal/eksternal.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Dokumen & Sertifikat -->
+    <section id="dokumen" class="max-w-7xl mx-auto px-6 py-12 mb-12">
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 space-y-6">
+            <h2 class="text-2xl font-bold text-cyan-400">Sertifikat & Dokumen Pendukung</h2>
+            <div class="grid md:grid-cols-3 gap-6 text-sm">
+                <div class="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
+                    <i class="fa-solid fa-file-contract text-2xl text-cyan-400"></i>
+                    <h3 class="font-bold text-white">Sertifikat Kompetensi Teknologi Informasi dan Komunikasi</h3>
+                    <p class="text-xs text-slate-400">Memiliki Sertifikasi Kompetensi Resmi Computer Literate Certified Profesional (CLCP) Level III IQF pada bidang Komputer Aplikasi Perkantoran Jenjang III KKNI, yang membuktikan keahlian tingkat lanjut dalam pengoperasian teknologi informasi dan aplikasi perkantoran..</p>
+                    <div class="pt-2">
+                            <a href="assets/sertifikat-clcp.pdf" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+                                <i class="fa-solid fa-eye"></i> Lihat Sertifikat
+                            </a>
+                    </div>
+                </div>
+                <div class="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
+                    <i class="fa-solid fa-certificate text-2xl text-cyan-400"></i>
+                    <h3 class="font-bold text-white">Sertifikat Atma Luhur English Proficiency Test (ALEPT) </h3>
+                    <p class="text-xs text-slate-400">Membuktikan kemampuan komunikasi lisan dan tulisan berbahasa Inggris untuk mendukung literasi teknologi global.</p>
+                    <div class="pt-2">
+                            <a href="assets/toefl.jpeg" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+                                <i class="fa-solid fa-eye"></i> Lihat Sertifikat
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-8 text-center text-xs text-slate-500 font-mono">
+        <p>© 2026 Thalia Puspita Sari, S.Kom. Hak Cipta Dilindungi.</p>
+        <p class="mt-1 text-slate-600">Frontend Developer & UI/UX Design</p>
+    </footer>
+
+</body>
+</html>
