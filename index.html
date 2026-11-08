@@ -27,12 +27,11 @@
                 <a href="#tentang" class="hover:text-cyan-400 transition">Tentang</a>
                 <a href="#pendidikan" class="hover:text-cyan-400 transition">Pendidikan & Pencapaian</a>
                 <a href="#proyek" class="hover:text-cyan-400 transition">Proyek</a>
+                <a href="#pengalaman" class="text-slate-300 hover:text-cyan-400 transition">Pengalaman</a>
                 <a href="#keahlian" class="hover:text-cyan-400 transition">Keahlian</a>
-                <a href="#pengalaman" class="hover:text-cyan-400 transition">Pengalaman</a>
+                <a href="#sertifikat" class="hover:text-cyan-400 transition">Sertifikat & Dokumen Pendukung</a>
             </div>
-            <a href="#dokumen" class="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs transition shadow-md">
-                Dokumen & CV
-            </a>
+        
         </div>
     </nav>
 
@@ -50,16 +49,24 @@
                 <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
                     Lulusan S1 Teknik Informatika berdedikasi tinggi dengan fokus minat pada <strong>Administration</strong>, <strong>Frontend Development</strong> dan <strong>UI/UX Design</strong>. Memiliki pengetahuan dasar dalam membangun aplikasi web berbasis HTML, CSS, PHP, CodeIgniter & MySQL, serta terampil merancang antarmuka intuitif dan responsif.
                 </p>
-                <div class="grid sm:grid-cols-2 gap-3 text-sm text-slate-300 font-mono pt-2">
-                    <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 flex items-center gap-3">
-                        <i class="fa-solid fa-envelope text-cyan-400"></i>
-                        <span class="truncate">thaliapuspitasari11@gmail.com</span>
+                <!-- ================= KOTAK KONTAK (EMAIL & WHATSAPP) ================= -->
+                    <div class="grid sm:grid-cols-2 gap-3 text-sm text-slate-300 font-mono pt-2">
+                        
+                        <!-- Tombol Email -->
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=thaliapuspitasari11@gmail.com" target="_blank" rel="noopener noreferrer"
+                    class="p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 flex items-center gap-3 transition group shadow-lg">
+                        <i class="fa-solid fa-envelope text-cyan-400 group-hover:scale-110 transition"></i>
+                        <span class="truncate text-xs sm:text-sm text-slate-300 group-hover:text-white transition">thaliapuspitasari11@gmail.com</span>
+                    </a>
+
+                        <!-- Tombol WhatsApp -->
+                        <a href="https://wa.me/6282182035887" target="_blank" rel="noopener noreferrer"
+                        class="p-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 flex items-center gap-3 transition group shadow-lg">
+                            <i class="fa-solid fa-phone text-cyan-400 group-hover:scale-110 transition"></i>
+                            <span class="truncate text-xs sm:text-sm text-slate-300 group-hover:text-white transition">0821-8203-5887</span>
+                        </a>
+
                     </div>
-                    <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 flex items-center gap-3">
-                        <i class="fa-solid fa-phone text-cyan-400"></i>
-                        <span>0821-8203-5887</span>
-                    </div>
-                </div>
             </div>
             <div class="lg:col-span-5 flex justify-center">
                 <div class="w-full max-w-md bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-2xl space-y-4">
@@ -103,12 +110,16 @@
             </div>
             <h2 class="text-2xl sm:text-3xl font-bold text-white">Pendidikan & Pencapaian</h2>
             <div class="grid md:grid-cols-12 gap-6">
-                <div class="md:col-span-8 bg-slate-900 border border-slate-800 rounded-3xl p-8 space-y-4">
+                <div class="md:col-span-6 bg-slate-900 border border-slate-800 rounded-3xl p-8 space-y-4 flex-col justify-between">
+                    <div class="space-y-4">
+                        </div>
                     <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Pendidikan Strata 1 (S1)</span>
                     <h3 class="text-xl font-bold text-white">S1 Teknik Informatika</h3>
                     <p class="text-cyan-400 text-sm font-medium">Institut Sains dan Bisnis Atma Luhur - Pangkalpinang</p>
                     <p class="text-xs font-mono text-slate-400">Periode Kuliah: Sep 2022 - Okt 2026</p>
-                    
+                     <p class="text-xs text-slate-300">
+                           Memiliki landasan akademis dalam bidang Teknik Informatika dengan fokus kompetensi pada pengembangan front-end, rekayasa sistem informasi berbasis web, serta penerapan prinsip-prinsip UI/UX design yang interaktif dan berorientasi pada pengguna.
+                        </p>
                     <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-3">
                         <div class="flex items-center gap-2 text-emerald-400 text-sm font-semibold">
                             <i class="fa-solid fa-certificate"></i> Ijazah S1 & Transkrip Nilai
@@ -124,213 +135,975 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:col-span-4 bg-gradient-to-b from-cyan-500/10 to-slate-900 border border-cyan-500/30 rounded-3xl p-8 space-y-3 flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs font-mono text-cyan-400 uppercase">Prestasi Akademik</span>
-                        <h3 class="text-lg font-bold text-white mt-1">Beasiswa Yayasan Khouw Kalbe</h3>
-                        <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-                            Penerima Beasiswa Prestasi BESTARI dari Yayasan Khouw Kalbe (2023), melalui seleksi kompetitif berkat komitmen terhadap prestasi akademik.
-                        </p>
-                        <div class="pt-2">
-                            <a href="assets/bukti-penerima-beasiswa.pdf" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
-                                <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                            </a>
-                        </div>
-                    </div>
+                <!-- Bagian Beasiswa Diperbarui (3 Kolom Gambar & Modal Interaktif) -->
+<div class="md:col-span-6 bg-gradient-to-b from-cyan-500/10 to-slate-900 border border-cyan-500/30 rounded-3xl p-6 sm:p-8 space-y-6 flex flex-col justify-between">
+    <div class="space-y-4">
+        <div>
+            <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Pencapaian Akademik</span>
+            <h3 class="text-xl font-bold text-white mt-1">Beasiswa Yayasan Khouw Kalbe</h3>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                Penerima Beasiswa Prestasi BESTARI dari Yayasan Khouw Kalbe (2023), melalui seleksi kompetitif berkat komitmen terhadap prestasi akademik, kepemimpinan, dan kontribusi sosial.
+            </p>
+           
+        </div>
+
+        <!-- 3 Kolom Gambar Interaktif -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+            
+            <!-- Kolom 1: Kegiatan Beasiswa -->
+            <div onclick="openModal('modalKegiatan')" class="group cursor-pointer bg-slate-950 border border-slate-800 hover:border-cyan-500/50 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg">
+                <div class="relative h-32 overflow-hidden">
+                    <img src="assets/cbt.jpg" alt="Kegiatan Beasiswa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                    <span class="absolute bottom-2 left-2 bg-cyan-500/90 text-slate-950 font-bold text-[9px] uppercase tracking-wider px-2 py-0.5 rounded">
+                        Klik Detail
+                    </span>
+                </div>
+                <div class="p-3 space-y-1">
+                    <h4 class="text-xs font-bold text-white group-hover:text-cyan-400 transition-colors flex items-center justify-between">
+                        Kegiatan
+                        <i class="fa-solid fa-arrow-right text-[10px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                    </h4>
+                    <p class="text-[10px] text-slate-400 line-clamp-2">Pelatihan kepemimpinan dan mentoring berkala.</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Proyek & Pencapaian -->
-    <section id="proyek" class="max-w-7xl mx-auto px-6 py-12">
-        <div class="space-y-6">
-            <div class="flex items-center gap-2 text-cyan-400 text-sm font-semibold uppercase tracking-wider">
-                <i class="fa-solid fa-laptop-code"></i> Portfolio Showcase
-            </div>
-            <h2 class="text-2xl sm:text-3xl font-bold text-white">Proyek Sistem Informasi & UI/UX</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4">
-                    <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Web Application Project</span>
-                    <h3 class="text-xl font-bold text-white">Sistem Informasi Berbasis Web (PHP & CodeIgniter)</h3>
-                    <p class="text-sm text-slate-300">Pengembangan proyek sistem informasi akademik/organisasi selama perkuliahan dengan desain antarmuka yang responsif dan terstruktur.</p>
+            <!-- Kolom 2: Pencapaian Beasiswa -->
+            <div onclick="openModal('modalPencapaian')" class="group cursor-pointer bg-slate-950 border border-slate-800 hover:border-cyan-500/50 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg">
+                <div class="relative h-32 overflow-hidden">
+                    <img src="assets/pencapaian.jpeg" alt="Pencapaian Beasiswa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                    <span class="absolute bottom-2 left-2 bg-cyan-500/90 text-slate-950 font-bold text-[9px] uppercase tracking-wider px-2 py-0.5 rounded">
+                        Klik Detail
+                    </span>
                 </div>
-                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4">
-                    <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">UI/UX Design Concept</span>
-                    <h3 class="text-xl font-bold text-white">UI/UX Prototype Dashboard & Interface</h3>
-                    <p class="text-sm text-slate-300">Perancangan tata letak antarmuka aplikasi yang intuitif, ramah pengguna, dan estetis menggunakan Canva dan prinsip desain modern.</p>
+                <div class="p-3 space-y-1">
+                    <h4 class="text-xs font-bold text-white group-hover:text-cyan-400 transition-colors flex items-center justify-between">
+                        Pencapaian
+                        <i class="fa-solid fa-arrow-right text-[10px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                    </h4>
+                    <p class="text-[10px] text-slate-400 line-clamp-2">IPK 3.94 (Cumlaude) & Sertifikasi CBT.</p>
                 </div>
             </div>
-            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4">
-                    <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Data Analysis & Research</span>
-                    <h3 class="text-xl font-bold text-white">HAKI & Publikasi Jurnal</h3>
-                    <p class="text-sm text-slate-300">Penulis jurnal ilmiah berjudul <strong>"XGBoost-Based Sentiment Analysis for Evaluating Customer Satisfaction at Hotel Puri Ansel"</strong> serta kepemilikan hak kekayaan intelektual (HAKI) resmi.</p>
-                    <!-- Detail Pendekatan STAR (Situation, Task, Action, Result) -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
-        <!-- Situation -->
-        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800/80 space-y-2">
-            <div class="text-cyan-400 font-bold text-xs uppercase tracking-wider flex items-center gap-1.5">
-                <i class="fa-solid fa-triangle-exclamation"></i> Situation
-            </div>
-            <p class="text-xs text-slate-400 leading-relaxed">
-                Ulasan online hotel dalam jumlah besar sering tidak terstruktur dan sulit dievaluasi secara manual untuk mengidentifikasi perbaikan layanan di Hotel Puri Ansel.
-            </p>
-        </div>
 
-        <!-- Task -->
-        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800/80 space-y-2">
-            <div class="text-cyan-400 font-bold text-xs uppercase tracking-wider flex items-center gap-1.5">
-                <i class="fa-solid fa-list-check"></i> Task
+            <!-- Kolom 3: Dokumentasi Tugas -->
+            <div onclick="openModal('modalTugas')" class="group cursor-pointer bg-slate-950 border border-slate-800 hover:border-cyan-500/50 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg">
+                <div class="relative h-32 overflow-hidden">
+                    <img src="assets/tugas.jpeg" alt="Dokumentasi Tugas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                    <span class="absolute bottom-2 left-2 bg-cyan-500/90 text-slate-950 font-bold text-[9px] uppercase tracking-wider px-2 py-0.5 rounded">
+                        Klik Detail
+                    </span>
+                </div>
+                <div class="p-3 space-y-1">
+                    <h4 class="text-xs font-bold text-white group-hover:text-cyan-400 transition-colors flex items-center justify-between">
+                        Tugas
+                        <i class="fa-solid fa-arrow-right text-[10px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                    </h4>
+                    <p class="text-[10px] text-slate-400 line-clamp-2">Penugasan & refleksi diri.</p>
+                </div>
             </div>
-            <p class="text-xs text-slate-400 leading-relaxed">
-                Merancang dan membangun model analisis sentimen otomatis untuk mengklasifikasikan ulasan pelanggan secara akurat guna menghasilkan wawasan tingkat kepuasan layanan.
-            </p>
-        </div>
 
-        <!-- Action -->
-        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800/80 space-y-2">
-            <div class="text-cyan-400 font-bold text-xs uppercase tracking-wider flex items-center gap-1.5">
-                <i class="fa-solid fa-gears"></i> Action
-            </div>
-            <p class="text-xs text-slate-400 leading-relaxed">
-                Menerapkan algoritma <strong>XGBoost</strong>, melakukan preprocessing teks data, tokenisasi, serta evaluasi performa model klasifikasi sentimen secara mendalam.
-            </p>
-        </div>
-
-        <!-- Result -->
-        <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800/80 space-y-2">
-            <div class="text-cyan-400 font-bold text-xs uppercase tracking-wider flex items-center gap-1.5">
-                <i class="fa-solid fa-chart-line"></i> Result
-            </div>
-            <p class="text-xs text-slate-400 leading-relaxed">
-                Menghasilkan model prediksi akurat yang sukses didokumentasikan ke dalam jurnal ilmiah berstandar serta memperoleh sertifikat hak kekayaan intelektual (HAKI) resmi.
-            </p>
         </div>
     </div>
-                    <div class="pt-2">
-                            <a href="assets/haki.pdf" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
-                                <i class="fa-solid fa-eye"></i> Lihat HAKI
-                            </a>
-                            <!-- Tombol untuk menuju Link Web Jurnal Resmi -->
-                            <a href="https://j-ilkominfo.org/index.php/ejournalaikom/article/view/484" target="_blank" class="px-3 py-1.5 bg-slate-900 hover:bg-slate-800 text-cyan-400 font-semibold text-xs rounded-xl border border-slate-700 transition inline-flex items-center gap-1.5">
-                                <i class="fa-solid fa-globe"></i> Buka Link Web Jurnal
-                            </a>
-                    </div>
+     <div class="pt-3">
+                <a href="assets/sertifikat-beasiswa.pdf" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+                    <i class="fa-solid fa-eye"></i> Lihat Sertifikat
+                </a>
+            </div>
+</div>
+
+<!-- ================= POPUP MODAL (KEGIATAN) ================= -->
+<div id="modalKegiatan" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-2xl w-full p-6 space-y-4 max-h-[90vh] overflow-y-auto">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <h3 class="text-lg font-bold text-cyan-400 flex items-center gap-2">
+                <i class="fa-solid fa-users"></i> Kegiatan Selama Beasiswa BESTARI
+            </h3>
+            <button onclick="closeModal('modalKegiatan')" class="text-slate-400 hover:text-white text-xl font-bold">&times;</button>
+        </div>
+        <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+           <div class="space-y-4 text-xs sm:text-sm text-slate-300">
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800/80 space-y-3">
+                    <strong class="text-white block">1. Bootcamps & Capacity Building</strong>
+                    <p class="text-xs text-slate-400">Mengikuti serangkaian sesi pembekalan soft skills, kepemimpinan, dan kesiapan karier dari Yayasan Khouw Kalbe.</p>
+                    <a href="https://drive.google.com/drive/folders/1IVWjpjcFvJBnvWOR8OkAla05v34b1KtR?usp=sharing" target="_blank" class="block overflow-hidden rounded-lg border border-slate-800 h-40 group relative">
+                        <img src="assets/cbt.jpg" alt="Bootcamp" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="px-3 py-1.5 bg-cyan-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg">
+                                <i class="fa-solid fa-file-pdf"></i> Klik detail
+                            </span>
+                        </div>
+                    </a>
                 </div>
+            <li class="p-3 bg-slate-950 rounded-xl border border-slate-800/80">
+                <strong class="text-white block mb-1">2. Workshop</strong>
+                Berpartisipasi aktif dalam berbagai sesi workshop peningkatan keterampilan, wawasan teknologi, dan pengembangan diri yang diselenggarakan program beasiswa.
+            </li>
+             <a href="https://drive.google.com/drive/folders/1OHxu7Dk1yWXq7YrzvW0HoSCv0ijOwRH1?usp=sharing" target="_blank" class="block overflow-hidden rounded-lg border border-slate-800 h-40 group relative">
+                        <img src="assets/workshop.jpg" alt="Bootcamp" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="px-3 py-1.5 bg-cyan-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg">
+                                <i class="fa-solid fa-file-pdf"></i> Klik detail
+                            </span>
+                        </div>
+                    </a>
+        </ul>
+    </div>
+</div>
+
+<!-- ================= POPUP MODAL (PENCAPAIAN BEASISWA) ================= -->
+    <div id="modalPencapaian" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-2xl w-full p-6 space-y-4 max-h-[90vh] overflow-y-auto">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h3 class="text-lg font-bold text-cyan-400 flex items-center gap-2">
+                    <i class="fa-solid fa-trophy"></i> Pencapaian Selama Beasiswa
+                </h3>
+                <button onclick="closeModal('modalPencapaian')" class="text-slate-400 hover:text-white text-xl font-bold">&times;</button>
+            </div>
+            <div class="space-y-4 text-xs sm:text-sm text-slate-300">
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800/80 space-y-3">
+                    <strong class="text-white block">1. Prestasi Akademik Tinggi (IPK 3.94 / Cumlaude)</strong>
+                    <p class="text-xs text-slate-400">Konsisten mempertahankan performa akademik yang sangat baik sepanjang masa studi hingga meraih predikat kelulusan Dengan Pujian (Cumlaude).</p>
+                    <a href="https://drive.google.com/drive/folders/1SQuLTkleH118M6Yd42TpHby2Mm4BrRbg?usp=sharing" target="_blank" class="block overflow-hidden rounded-lg border border-slate-800 h-40 group relative">
+                        <img src="assets/cmld.png" alt="IPK" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="px-3 py-1.5 bg-cyan-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg">
+                                <i class="fa-solid fa-file-pdf"></i> Klik detail
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800/80 space-y-3">
+                    <strong class="text-white block">2. Sertifikat Character & Capacity Building (CBT)</strong>
+                    <p class="text-xs text-slate-400">Memperoleh sertifikat resmi kelulusan program CBT Yayasan Khouw Kalbe sebagai wujud pengembangan kapasitas diri dan kepemimpinan.</p>
+                    <a href="https://drive.google.com/drive/folders/1QRLsTm8JJHjq84oWjeudhZbM2ExGS1VG?usp=sharing" target="_blank" class="block overflow-hidden rounded-lg border border-slate-800 h-40 group relative">
+                        <img src="assets/sertifikat-beasiswa.jpeg" alt="Sertifikat CBT" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="px-3 py-1.5 bg-cyan-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg">
+                                <i class="fa-solid fa-file-pdf"></i> Klik detail
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="pt-2 text-right">
+                <button onclick="closeModal('modalPencapaian')" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold rounded-xl transition">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+<!-- ================= POPUP MODAL (TUGAS BEASISWA) ================= -->
+    <div id="modalTugas" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-2xl w-full p-6 space-y-4 max-h-[90vh] overflow-y-auto">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h3 class="text-lg font-bold text-cyan-400 flex items-center gap-2">
+                    <i class="fa-solid fa-file-lines"></i> Dokumentasi Penugasan & Refleksi Diri
+                </h3>
+                <button onclick="closeModal('modalTugas')" class="text-slate-400 hover:text-white text-xl font-bold">&times;</button>
+            </div>
+            <div class="space-y-4 text-xs sm:text-sm text-slate-300">
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800/80 space-y-3">
+                    <strong class="text-white block">1. Penugasan Terstruktur Beasiswa</strong>
+                    <p class="text-xs text-slate-400">Penyelesaian berbagai tugas dan penugasan akademik yang diberikan selama program beasiswa.</p>
+                    <a href="https://drive.google.com/drive/folders/1PQhvzggs4nm2DLB1jIhAOPXLC_UKZBbv?usp=sharing" target="_blank" class="block overflow-hidden rounded-lg border border-slate-800 h-40 group relative">
+                        <img src="assets/tgs.jpeg" alt="Penugasan" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="px-3 py-1.5 bg-cyan-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg">
+                                <i class="fa-solid fa-file-pdf"></i> Klik detail
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-3 bg-slate-950 rounded-xl border border-slate-800/80 space-y-3">
+                    <strong class="text-white block">2. Esai & Refleksi Diri</strong>
+                    <p class="text-xs text-slate-400">Penyusunan esai refleksi perkembangan diri, evaluasi capaian, serta rencana pengembangan ke depan.</p>
+                    <a href="https://drive.google.com/drive/folders/1NFArvlFJlSYKRXmLjZV2SQRlP-uVfUxx?usp=sharing" target="_blank" class="block overflow-hidden rounded-lg border border-slate-800 h-40 group relative">
+                        <img src="assets/refleksi.jpeg" alt="Refleksi Diri" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="px-3 py-1.5 bg-cyan-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg">
+                                <i class="fa-solid fa-file-pdf"></i> Klik detail
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="pt-2 text-right">
+                <button onclick="closeModal('modalTugas')" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold rounded-xl transition">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+<!-- Script JavaScript untuk Modal -->
+<script>
+    function openModal(id) {
+        document.getElementById(id).classList.remove('hidden');
+    }
+    function closeModal(id) {
+        document.getElementById(id).classList.add('hidden');
+    }
+</script>
+            </div>
         </div>
     </section>
 
-    <!-- Keahlian -->
-    <section id="keahlian" class="max-w-7xl mx-auto px-6 py-12">
-        <div class="space-y-6">
-            <div class="flex items-center gap-2 text-cyan-400 text-sm font-semibold uppercase tracking-wider">
-                <i class="fa-solid fa-code"></i> Hard & Soft Skills
-            </div>
-            <h2 class="text-2xl sm:text-3xl font-bold text-white">Keahlian & Kompetensi</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4">
-                    <h3 class="text-lg font-bold text-cyan-400">Hard Skills</h3>
-                    <div class="flex flex-wrap gap-2 text-xs font-medium">
-                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">HTML & CSS</span>
-                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">PHP & CodeIgniter</span>
-                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">MySQL Database</span>
-                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">UI/UX Design</span>
-                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">Visual Studio Code</span>
-                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">Canva & Office Suite</span>
-                    </div>
-                </div>
-                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4">
-                    <h3 class="text-lg font-bold text-cyan-400">Soft Skills</h3>
-                    <div class="flex flex-wrap gap-2 text-xs font-medium">
-                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">Komunikasi</span>
-                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">Kerja Sama Tim</span>
-                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">Berpikir Analitis</span>
-                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">Manajemen Waktu</span>
-                        <span class="px-3 py-1.5 bg-slate-950 text-slate-200 rounded-xl border border-slate-800">Ketelitian & Adaptabilitas</span>
-                    </div>
-                </div>
-            </div>
+   <!-- Proyek & Pencapaian -->
+<section id="proyek" class="max-w-7xl mx-auto px-6 py-12">
+    <div class="space-y-6">
+        <div class="flex items-center gap-2 text-cyan-400 text-sm font-semibold uppercase tracking-wider">
+            <i class="fa-solid fa-laptop-code"></i> Portfolio Showcase
         </div>
-    </section>
-
-    <!-- Pengalaman Magang & Organisasi -->
-    <section id="pengalaman" class="max-w-7xl mx-auto px-6 py-12">
-        <div class="space-y-6">
-            <div class="flex items-center gap-2 text-cyan-400 text-sm font-semibold uppercase tracking-wider">
-                <i class="fa-solid fa-briefcase"></i> Pengalaman Praktis
-            </div>
-            <h2 class="text-2xl sm:text-3xl font-bold text-white">Magang & Organisasi</h2>
-            <div class="space-y-6">
-                <!-- Magang Ombudsman -->
-                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 space-y-3">
-                    <div class="flex justify-between flex-wrap gap-2">
-                        <h3 class="text-xl font-bold text-white">Mahasiswa Magang - Penerimaan & Verifikasi Laporan (PVL)</h3>
-                        <span class="text-xs font-mono text-cyan-400 bg-slate-950 px-3 py-1 rounded-full border border-slate-800">Sep 2025 - Jan 2026</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white">Proyek Sistem Informasi & UI/UX</h2>
+        
+        <!-- Grid 3 Kartu Proyek Utama -->
+        <div class="grid md:grid-cols-3 gap-6">
+            
+            <!-- Kartu 1: Web Application Project -->
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4 flex flex-col justify-between">
+                <div class="space-y-3">
+                    <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 inline-block">Web Application</span>
+                    <h3 class="text-lg font-bold text-white">Sistem Informasi & Web Lokal</h3>
+                    
+                    <div class="overflow-hidden rounded-xl border border-slate-800 h-36">
+                        <img src="assets/web.jpeg" alt="Proyek Web" class="w-full h-full object-cover hover:scale-105 transition duration-300">
                     </div>
-                    <p class="text-cyan-400 text-sm font-medium">Ombudsman RI Perwakilan Kepulauan Bangka Belitung</p>
-                    <p class="text-slate-300 text-sm leading-relaxed text-justify">
-                        Selama magang pada bagian Penerimaan dan Verifikasi Laporan (PVL), saya membantu proses penerimaan laporan masyarakat, verifikasi dokumen, administrasi, serta memberikan pelayanan awal kepada masyarakat secara profesional dan teliti.
+
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Dikembangkan secara lokal menggunakan Laragon / XAMPP sebagai lingkungan server lokal serta Visual Studio Code sebagai penyunting kode utama, memastikan struktur basis data dan arsitektur backend berbasis PHP serta CodeIgniter berjalan secara optimal.
                     </p>
-                    <div class="pt-2">
-                            <a href="assets/sertifikat-magang.jpeg" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
-                                <i class="fa-solid fa-eye"></i> Lihat Sertifikat
-                            </a>
+                </div>
+                <div class="pt-2">
+                    <button onclick="openModal('modalWeb')" class="w-full py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Lihat Detail 
+                    </button>
+                </div>
+            </div>
+
+            <!-- Kartu 2: UI/UX Design Concept -->
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4 flex flex-col justify-between">
+                <div class="space-y-3">
+                    <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 inline-block">UI/UX Design</span>
+                    <h3 class="text-lg font-bold text-white">UI/UX Prototype Mobile App (Figma)</h3>
+                    
+                    <div class="overflow-hidden rounded-xl border border-slate-800 h-36">
+                        <img src="assets/uiux.jpeg" alt="UI/UX Figma" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    </div>
+
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Perancangan antarmuka aplikasi seluler menggunakan Figma dengan alur navigasi yang interaktif, dari halaman login hingga detail menu.
+                    </p>
+                </div>
+                <div class="pt-2">
+                    <button onclick="openModal('modalFigma')" class="w-full py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Lihat Detail & Galeri Desain
+                    </button>
+                </div>
+            </div>
+
+            <!-- Kartu 3: HAKI & Publikasi Jurnal (Menyatu dengan STAR) -->
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4 flex flex-col justify-between">
+                <div class="space-y-3">
+                    <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 inline-block">Data Science & Research</span>
+                    <h3 class="text-lg font-bold text-white">HAKI & Publikasi Jurnal Ilmiah</h3>
+                    
+                    <div class="overflow-hidden rounded-xl border border-slate-800 h-36">
+                        <img src="assets/Poster.jpeg" alt="Publikasi Jurnal" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    </div>
+
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Penulis jurnal ilmiah <strong>"XGBoost-Based Sentiment Analysis for Evaluating Customer Satisfaction at Hotel Puri Ansel"</strong> & kepemilikan HAKI.
+                    </p>
+                </div>
+
+                <!-- Tombol Aksi HAKI & Jurnal -->
+                <div class="pt-2 flex flex-col gap-2">
+                    <div class="flex gap-2">
+                        <a href="assets/haki.pdf" target="_blank" class="flex-1 py-2 text-center bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+                            <i class="fa-solid fa-eye"></i> HAKI
+                        </a>
+                        <a href="https://j-ilkominfo.org/index.php/ejournalaikom/article/view/484" target="_blank" class="flex-1 py-2 text-center bg-slate-950 hover:bg-slate-800 text-cyan-400 font-semibold text-xs rounded-xl border border-slate-700 transition">
+                            <i class="fa-solid fa-globe"></i> Jurnal
+                        </a>
+                    </div>
+                    <button onclick="openModal('modalJurnal')" class="w-full py-1.5 bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs rounded-xl transition">
+                        <i class="fa-solid fa-file-lines"></i> Lihat Detail
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= POPUP MODAL: STUDI KASUS RISET (JURNAL & HAKI) ================= -->
+<div id="modalJurnal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-3xl w-full p-6 space-y-4 max-h-[90vh] overflow-y-auto">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <h3 class="text-lg font-bold text-cyan-400 flex items-center gap-2">
+                <i class="fa-solid fa-chart-line"></i>Analisis Sentimen XGBoost Hotel Puri Ansel
+            </h3>
+            <button onclick="closeModal('modalJurnal')" class="text-slate-400 hover:text-white text-xl font-bold">&times;</button>
+        </div>
+        <div class="grid md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-300">
+            <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 space-y-2">
+                <strong class="text-cyan-400 uppercase tracking-wider block text-xs"><i class="fa-solid fa-triangle-exclamation"></i> Situation</strong>
+                <p class="text-slate-400 leading-relaxed">Ulasan online hotel dalam jumlah besar sering tidak terstruktur dan sulit dievaluasi secara manual untuk mengidentifikasi perbaikan layanan di Hotel Puri Ansel.</p>
+            </div>
+            <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 space-y-2">
+                <strong class="text-cyan-400 uppercase tracking-wider block text-xs"><i class="fa-solid fa-list-check"></i> Task</strong>
+                <p class="text-slate-400 leading-relaxed">Merancang dan membangun model analisis sentimen otomatis untuk mengklasifikasikan ulasan pelanggan secara akurat guna menghasilkan wawasan tingkat kepuasan layanan.</p>
+            </div>
+            <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 space-y-2">
+                <strong class="text-cyan-400 uppercase tracking-wider block text-xs"><i class="fa-solid fa-gears"></i> Action</strong>
+                <p class="text-slate-400 leading-relaxed">Menerapkan algoritma XGBoost, melakukan preprocessing teks data, tokenisasi, serta evaluasi performa model klasifikasi sentimen secara mendalam.</p>
+            </div>
+            <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 space-y-2">
+                <strong class="text-cyan-400 uppercase tracking-wider block text-xs"><i class="fa-solid fa-chart-pie"></i> Result</strong>
+                <p class="text-slate-400 leading-relaxed">Menghasilkan model prediksi akurat yang sukses dipublikasikan ke dalam jurnal ilmiah berstandar serta memperoleh hak kekayaan intelektual (HAKI) resmi.</p>
+            </div>
+        </div>
+        <!-- Bagian Poster Penelitian di Bawah -->
+            <div class="space-y-2 pt-2 border-t border-slate-800">
+                <span class="text-xs font-mono text-cyan-400 uppercase flex items-center gap-1.5">
+                    <i class="fa-solid fa-image"></i> Poster Penelitian Ilmiah
+                </span>
+                <div class="rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 p-2">
+                    <img src="assets/Poster.jpeg" alt="Poster Penelitian XGBoost" class="w-full h-auto object-cover rounded-xl hover:scale-[1.01] transition duration-300">
+                </div>
+            </div>
+        </div>
+        <div class="pt-2 text-right">
+            <button onclick="closeModal('modalJurnal')" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold rounded-xl transition">Tutup</button>
+        </div>
+    </div>
+</div>
+
+<!-- ================= POPUP MODAL: UI/UX DESIGN ================= -->
+<div id="modalFigma" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-3xl w-full p-6 space-y-4 max-h-[90vh] overflow-y-auto">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <h3 class="text-lg font-bold text-cyan-400 flex items-center gap-2">
+                <i class="fa-solid fa-pen-nib"></i> Detail UI/UX Prototype (Figma)
+            </h3>
+            <button onclick="closeModal('modalFigma')" class="text-slate-400 hover:text-white text-xl font-bold">&times;</button>
+        </div>
+        
+        <div class="space-y-4 text-xs sm:text-sm text-slate-300">
+            <!-- Grid 4 Kotak Metode STAR (Menyerupai Tampilan Jurnal/HAKI) -->
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 space-y-2">
+                    <strong class="text-cyan-400 uppercase tracking-wider block text-xs flex items-center gap-1.5">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Situation
+                    </strong>
+                    <p class="text-slate-400 leading-relaxed">
+                        Tuntutan kebutuhan akan perancangan antarmuka aplikasi digital yang tidak hanya estetis secara visual, tetapi juga intuitif serta berpusat pada kenyamanan pengguna (<em>user-centered</em>).
+                    </p>
+                </div>
+                <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 space-y-2">
+                    <strong class="text-cyan-400 uppercase tracking-wider block text-xs flex items-center gap-1.5">
+                        <i class="fa-solid fa-list-check"></i> Task
+                    </strong>
+                    <p class="text-slate-400 leading-relaxed">
+                        Merumuskan dan mengembangkan <em>wireframe</em> hingga <em>high-fidelity prototype</em> secara komprehensif menggunakan Figma.
+                    </p>
+                </div>
+                <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 space-y-2">
+                    <strong class="text-cyan-400 uppercase tracking-wider block text-xs flex items-center gap-1.5">
+                        <i class="fa-solid fa-gears"></i> Action
+                    </strong>
+                    <p class="text-slate-400 leading-relaxed">
+                        Menyusun sistem komponen desain (<em>design system</em>), hierarki tipografi, harmonisasi skema warna, serta memetakan alur interaksi pengguna (<em>user flow</em>) secara mendetail.
+                    </p>
+                </div>
+                <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 space-y-2">
+                    <strong class="text-cyan-400 uppercase tracking-wider block text-xs flex items-center gap-1.5">
+                        <i class="fa-solid fa-chart-pie"></i> Result
+                    </strong>
+                    <p class="text-slate-400 leading-relaxed">
+                        Menghasilkan purwarupa aplikasi interaktif siap uji yang terbukti mampu mengoptimalkan pengalaman pengguna (UX) secara optimal.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Galeri Desain UI/UX dengan Tautan ke Figma -->
+            <div class="space-y-2 pt-2 border-t border-slate-800">
+                <span class="text-xs font-mono text-cyan-400 uppercase flex items-center gap-1.5">
+                    <i class="fa-solid fa-image"></i> Dokumentasi / Galeri Desain (Klik untuk Buka Figma)
+                </span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    
+                    <!-- Gambar 1 -->
+                    <a href="https://www.figma.com/design/DAtQ579AMr6QmlmPbmocKr/Untitled?node-id=0-1&m=dev&t=V5vbYUW71QW7Kec0-1" target="_blank" class="block rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 h-48 relative group">
+                        <img src="assets/d1.jpeg" alt="Desain UI/UX 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="px-3 py-1.5 bg-cyan-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg flex items-center gap-1.5">
+                                <i class="fa-brands fa-figma"></i> Buka Project / Prototype Figma
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Gambar 2 -->
+                    <a href="https://www.figma.com/design/r2c5nv9MZnJnsKjAYnzn2q/Untitled--Copy---Copy---Copy-?m=dev&t=V5vbYUW71QW7Kec0-1" target="_blank" class="block rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 h-48 relative group">
+                        <img src="assets/d2.jpeg" alt="Desain UI/UX 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="px-3 py-1.5 bg-cyan-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg flex items-center gap-1.5">
+                                <i class="fa-brands fa-figma"></i> Buka Project / Prototype Figma
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-2 text-right">
+            <button onclick="closeModal('modalFigma')" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold rounded-xl transition">Tutup</button>
+        </div>
+    </div>
+</div>
+
+<!-- ================= POPUP MODAL: WEB LOKAL & SISTEM INFORMASI ================= -->
+<div id="modalWeb" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-3xl w-full p-6 space-y-4 max-h-[90vh] overflow-y-auto">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <h3 class="text-lg font-bold text-cyan-400 flex items-center gap-2">
+                <i class="fa-solid fa-code"></i> Detail Sistem Informasi & Web Lokal
+            </h3>
+            <button onclick="closeModal('modalWeb')" class="text-slate-400 hover:text-white text-xl font-bold">&times;</button>
+        </div>
+        
+        <div class="space-y-4 text-xs sm:text-sm text-slate-300">
+            <!-- Grid 4 Kotak Metode STAR -->
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 space-y-2">
+                    <strong class="text-cyan-400 uppercase tracking-wider block text-xs flex items-center gap-1.5">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Situation
+                    </strong>
+                    <p class="text-slate-400 leading-relaxed">
+                        Kebutuhan digitalisasi pencatatan data kesehatan (Sistem Pemantauan ASI) dan layanan pengaduan/konsultasi publik (berdasarkan pengalaman magang di Ombudsman).
+                    </p>
+                </div>
+                <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 space-y-2">
+                    <strong class="text-cyan-400 uppercase tracking-wider block text-xs flex items-center gap-1.5">
+                        <i class="fa-solid fa-list-check"></i> Task
+                    </strong>
+                    <p class="text-slate-400 leading-relaxed">
+                        Membangun aplikasi berbasis web lokal yang fungsional, terstruktur, dan responsif.
+                    </p>
+                </div>
+                <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 space-y-2">
+                    <strong class="text-cyan-400 uppercase tracking-wider block text-xs flex items-center gap-1.5">
+                        <i class="fa-solid fa-gears"></i> Action
+                    </strong>
+                    <p class="text-slate-400 leading-relaxed">
+                        Menggunakan bahasa pemrograman PHP dengan framework <strong>CodeIgniter</strong>, memanfaatkan lingkungan server lokal <strong>Laragon / XAMPP</strong> untuk manajemen database, serta <strong>Visual Studio Code</strong> sebagai penyunting kode utama.
+                    </p>
+                </div>
+                <div class="p-4 bg-slate-950 rounded-2xl border border-slate-800 space-y-2">
+                    <strong class="text-cyan-400 uppercase tracking-wider block text-xs flex items-center gap-1.5">
+                        <i class="fa-solid fa-chart-pie"></i> Result
+                    </strong>
+                    <p class="text-slate-400 leading-relaxed">
+                        Berhasil mengembangkan aplikasi berbasis web yang berjalan optimal secara lokal untuk mendukung efisiensi operasional sistem informasi.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Galeri Sistem Web dengan Tautan ke Google Drive -->
+            <div class="space-y-2 pt-2 border-t border-slate-800">
+                <span class="text-xs font-mono text-cyan-400 uppercase flex items-center gap-1.5">
+                    <i class="fa-solid fa-image"></i> Dokumentasi Sistem Web (Klik gambar untuk melihat detail selengkapnya di Drive)
+                </span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    
+                    <!-- Gambar 1: Web Ombudsman -->
+                    <a href="https://drive.google.com/drive/folders/1aHvonuqvag1QA3VGZAV8QIiTwOrmqPVu" target="_blank" class="block rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 h-48 relative group">
+                        <img src="assets/konsul.jpeg" alt="Web Konsultasi Publik Ombudsman" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="px-3 py-1.5 bg-cyan-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg flex items-center gap-1.5">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Lihat Tampilan Lengkap
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Gambar 2: Web Pemantauan ASI -->
+                    <a href="https://drive.google.com/drive/folders/1eUVDMJVTyFFgxUAsb3Gw6Erkj_5IgGOq" target="_blank" class="block rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 h-48 relative group">
+                        <img src="assets/asi.jpeg" alt="Sistem Pemantauan ASI" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="px-3 py-1.5 bg-cyan-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg flex items-center gap-1.5">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Lihat Tampilan Lengkap
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-2 text-right">
+            <button onclick="closeModal('modalWeb')" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold rounded-xl transition">Tutup</button>
+        </div>
+    </div>
+</div>
+
+    <!-- ================= SECTION: PENGALAMAN & ORGANISASI ================= -->
+<section id="pengalaman" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    
+    <!-- Judul Bagian -->
+    <div class="mb-12">
+        <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">REPUTASI & KARIER</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Pengalaman Magang & Organisasi</h2>
+    </div>
+
+    <!-- 1. KARTU MAGANG OMBUDSMAN -->
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 relative mb-6">
+        <div class="grid md:grid-cols-12 gap-6 items-center">
+            
+            <!-- Kolom Teks (8 Kolom) -->
+            <div class="md:col-span-8 space-y-4">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Pengalaman Profesional</span>
+                    <span class="text-xs font-mono text-slate-400">Sep 2025 – Jan 2026</span>
+                </div>
+                
+                <h3 class="text-xl sm:text-2xl font-bold text-white">Mahasiswa Magang - Penerimaan & Verifikasi Laporan (PVL)</h3>
+                <p class="text-cyan-400 text-sm font-medium">Ombudsman RI Perwakilan Kepulauan Bangka Belitung</p>
+                
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                    Selama magang pada bagian Penerimaan dan Verifikasi Laporan (PVL), saya membantu proses penerimaan laporan masyarakat, verifikasi dokumen, administrasi, perumusan opini publik, serta memberikan pelayanan awal kepada masyarakat secara profesional dan teliti.
+                </p>
+                
+                <div class="pt-2 flex flex-wrap gap-2">
+                    <a href="assets/sertifikat-magang.jpeg" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+                        <i class="fa-solid fa-eye"></i> Lihat Sertifikat Magang
+                    </a>
+                    <a href="https://babelpos.bacakoran.co/opini/read/21846/pelayanan-publik-berbasis-aplikasi-mempermudah-atau-menambah-beban" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs rounded-xl transition border border-slate-700">
+                        <span>🌐</span> Lihat Web Opini
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kolom Foto Dokumentasi Pemicu Modal Tugas (4 Kolom) -->
+            <div class="md:col-span-4">
+                <div onclick="openModal('modalMagang')" class="block rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 h-52 relative group shadow-lg cursor-pointer">
+                    <img src="assets/magang.jpg" alt="Dokumentasi Magang Ombudsman" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    
+                    <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center p-3 text-center">
+                        <span class="px-3 py-1.5 bg-cyan-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg flex items-center gap-1.5">
+                            🔗 Lihat Detail Kegiatan
+                        </span>
+                        <span class="text-[10px] text-slate-300 mt-1">Input, Arsip, Pelayanan, Notulen & Opini</span>
                     </div>
                 </div>
-                <!-- Organisasi DPM & HIMTI -->
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-3">
-                        <span class="text-xs font-mono text-cyan-400">Jan 2025 - Jan 2026</span>
-                        <h3 class="text-lg font-bold text-white">Ketua Komisi I Legislasi</h3>
-                        <p class="text-xs text-slate-400">Dewan Perwakilan Mahasiswa (DPM) ISB Atma Luhur</p>
-                        <ul class="list-disc list-inside text-xs text-slate-300 space-y-1">
-                            <li>Mengoordinasikan penyusunan dan evaluasi peraturan organisasi.</li>
-                            <li>Memimpin rapat dan program kerja Komisi I Bidang Legislasi.</li>
-                        </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= KARTU ORGANISASI: DEWAN PERWAKILAN MAHASISWA (DPM) ================= -->
+<div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 relative mb-6">
+    <div class="grid md:grid-cols-12 gap-6 items-center">
+        
+        <!-- Kolom Teks (8 Kolom) -->
+        <div class="md:col-span-8 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Organisasi Mahasiswa</span>
+                <span class="text-xs font-mono text-slate-400">Jan 2025 – Jan 2026</span>
+            </div>
+            
+            <h3 class="text-xl sm:text-2xl font-bold text-white">Ketua Komisi I Legislasi</h3>
+            <p class="text-cyan-400 text-sm font-medium">Dewan Perwakilan Mahasiswa (DPM) ISB Atma Luhur</p>
+            
+            <!-- Poin-poin rapi dengan indentasi sejajar -->
+            <ul class="text-xs sm:text-sm text-slate-300 space-y-2.5 list-disc pl-5 leading-relaxed">
+                <li>Merancang, menyusun, dan mengevaluasi aturan organisasi agar tata kelola kegiatan mahasiswa berjalan tertib, transparan, dan terarah.</li>
+                <li>Memimpin penyusunan program kerja komisi serta memfasilitasi rapat koordinasi untuk mempercepat pengesahan kebijakan organisasi.</li>
+                <li>Mengawasi pelaksanaan aturan di lingkungan kampus serta menyelaraskan kebijakan antarlembaga mahasiswa secara objektif dan akuntabel.</li>
+            </ul>
+        </div>
+
+        <!-- Kolom Foto Dokumentasi Pemicu Modal Kegiatan DPM (4 Kolom) -->
+        <div class="md:col-span-4">
+            <div onclick="openModal('modalDPM')" class="block rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 h-52 relative group shadow-lg cursor-pointer">
+                <img src="assets/dpm.jpeg" alt="Ketua Komisi I DPM" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                
+                <!-- Efek Overlay Saat Kursor Diarahkan -->
+                <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center p-3 text-center">
+                    <span class="px-3 py-1.5 bg-cyan-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg flex items-center gap-1.5">
+                        🔗 Lihat Detail Kegiatan
+                    </span>
+                    <span class="text-[10px] text-slate-300 mt-1">SOP Ormawa, KPUM, Rapat Komisi & Program Kerja</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+   <!-- ================= KARTU ORGANISASI: HIMTI ================= -->
+<div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 relative mb-6">
+    <div class="grid md:grid-cols-12 gap-6 items-center">
+        
+        <!-- Kolom Teks (8 Kolom) -->
+        <div class="md:col-span-8 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Organisasi Mahasiswa</span>
+                <span class="text-xs font-mono text-slate-400">Sep 2023 – Jul 2024</span>
+            </div>
+            
+            <h3 class="text-xl sm:text-2xl font-bold text-white">Ketua Hubungan Masyarakat (HUMAS)</h3>
+            <p class="text-cyan-400 text-sm font-medium">Himpunan Mahasiswa Teknik Informatika (HIMTI)</p>
+            
+            <ul class="text-xs sm:text-sm text-slate-300 space-y-2.5 list-disc pl-5 leading-relaxed">
+                <li>Memimpin dan mengkoordinasikan seluruh strategi komunikasi, publikasi, serta kerja sama eksternal maupun internal di bawah naungan departemen Humas.</li>
+                <li>Bertanggung jawab dalam membangun citra positif organisasi, memperluas relasi strategis dengan pihak luar, serta mengelola arus informasi kepada mahasiswa.</li>
+                <li>Menginisiasi dan memimpin pelaksanaan berbagai program kerja sosial kemasyarakatan serta kegiatan berbagi berkah untuk mempererat hubungan sosial.</li>
+            </ul>
+        </div>
+
+        <!-- Kolom Foto Dokumentasi HIMTI -->
+        <div class="md:col-span-4">
+            <div onclick="openModal('modalHIMTI')" class="block rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 h-52 relative group shadow-lg cursor-pointer">
+                <img src="assets/himti.jpeg" alt="Ketua Humas HIMTI" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                
+                <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition flex flex-col items-center justify-center p-3 text-center">
+                    <span class="px-3 py-1.5 bg-cyan-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg flex items-center gap-1.5">
+                        🔗 Lihat Detail Kegiatan
+                    </span>
+                    <span class="text-[10px] text-slate-300 mt-1">Pengabdian Masyarakat, Takjil & Sembako</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= KARTU ORGANISASI: UKM TARI BURUNG BEDINCAK ================= -->
+<div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 relative mb-6">
+    <div class="grid md:grid-cols-12 gap-6 items-center">
+        
+        <div class="md:col-span-8 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Organisasi Mahasiswa</span>
+                <span class="text-xs font-mono text-slate-400">Periode 2023</span>
+            </div>
+            
+            <h3 class="text-xl sm:text-2xl font-bold text-white">Sekretaris I</h3>
+            <p class="text-cyan-400 text-sm font-medium">UKM Tari Burung Bedincak ISB Atma Luhur</p>
+            
+            <ul class="text-xs sm:text-sm text-slate-300 space-y-2.5 list-disc pl-5 leading-relaxed">
+                <li>Mengelola administrasi kesekretariatan, pengarsipan surat masuk dan keluar, serta pendataan inventaris UKM secara terstruktur.</li>
+                <li>Mengkoordinasikan penyusunan proposal kegiatan, laporan pertanggungjawaban (LPJ), serta mengatur agenda latihan rutin organisasi.</li>
+            </ul>
+        </div>
+
+        <div class="md:col-span-4">
+            <div class="rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 h-52 relative shadow-lg">
+                <img src="assets/tari.jpeg" alt="UKM Tari Burung Bedincak" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= SECTION: KEAHLIAN / SKILLS ================= -->
+<section id="keahlian" class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    
+    <!-- Judul Section -->
+    <div class="mb-8 text-center space-y-2">
+        <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Keahlian & Kompetensi</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white">Keahlian Profesional</h2>
+        <p class="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto">
+            Daftar kompetensi, keahlian teknis, dan keterampilan pendukung yang saya kembangkan melalui pengalaman organisasi dan profesional.
+        </p>
+    </div>
+
+    <!-- Grid Kartu Keahlian -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Kategori 1: Pengembangan & Desain -->
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4 hover:border-cyan-500/50 transition duration-300 shadow-lg">
+            <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl font-bold">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">Web Development & UI/UX</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+                Membangun aplikasi web responsif serta merancang antarmuka dan pengalaman pengguna yang interaktif.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-cyan-300 text-[11px] font-mono rounded-lg">Web Development</span>
+                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-cyan-300 text-[11px] font-mono rounded-lg">UI/UX Design</span>
+            </div>
+        </div>
+
+        <!-- Kategori 2: Administrasi & Sistem -->
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4 hover:border-cyan-500/50 transition duration-300 shadow-lg">
+            <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl font-bold">
+                <i class="fa-solid fa-folder-open"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">Administrasi & Sistem</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+                Mengelola dokumentasi, kearsipan, tata kelola administrasi perkantoran, dan sistem pendukung.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-cyan-300 text-[11px] font-mono rounded-lg">Document Management</span>
+                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-cyan-300 text-[11px] font-mono rounded-lg">Administrative Skills</span>
+                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-cyan-300 text-[11px] font-mono rounded-lg">System Administration</span>
+            </div>
+        </div>
+
+        <!-- Kategori 3: Kepemimpinan & Komunikasi -->
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4 hover:border-cyan-500/50 transition duration-300 shadow-lg">
+            <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl font-bold">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">Kepemimpinan & Komunikasi</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+                Kemampuan memimpin tim, memecahkan masalah secara efektif, serta berkomunikasi secara profesional.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-cyan-300 text-[11px] font-mono rounded-lg">Leadership</span>
+                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-cyan-300 text-[11px] font-mono rounded-lg">Communication Skills</span>
+                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-cyan-300 text-[11px] font-mono rounded-lg">Problem Solving</span>
+            </div>
+        </div>
+
+        <!-- Kategori 4: Perangkat Produktivitas -->
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-4 hover:border-cyan-500/50 transition duration-300 shadow-lg sm:col-span-2 lg:col-span-3">
+            <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl font-bold">
+                <i class="fa-solid fa-file-excel"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">Perangkat Produktivitas</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+                Penguasaan perangkat lunak perkantoran untuk pengolahan data harian, laporan, dan presentasi.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 bg-slate-950 border border-slate-800 text-cyan-300 text-[11px] font-mono rounded-lg">Microsoft Office</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= POPUP MODAL (TARUH DI BAGIAN PALING BAWAH HALAMAN) ================= -->
+
+<!-- Modal Magang -->
+<div id="modalMagang" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-3xl w-full p-6 space-y-4 max-h-[90vh] overflow-y-auto">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <h3 class="text-lg font-bold text-cyan-400 flex items-center gap-2">
+                <i class="fa-solid fa-briefcase"></i> Rincian Tugas Magang
+            </h3>
+            <button onclick="closeModal('modalMagang')" class="text-slate-400 hover:text-white text-xl font-bold">&times;</button>
+        </div>
+        <div class="space-y-4 text-xs sm:text-sm text-slate-300">
+            <p class="text-slate-400 leading-relaxed">Berikut adalah rincian tugas utama beserta dokumentasi kegiatan selama pelaksanaan magang di bagian Penerimaan dan Verifikasi Laporan (PVL).</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-36 overflow-hidden relative"><img src="assets/input.jpeg" alt="Input Data" class="w-full h-full object-cover"></div>
+                    <div class="p-3.5 space-y-1">
+                        <h4 class="font-bold text-white text-xs flex items-center gap-1.5"><i class="fa-solid fa-keyboard text-cyan-400"></i> Input Data Laporan</h4>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Pencatatan dan digitalisasi data laporan masuk dari masyarakat kedalam sistem.</p>
                     </div>
-                    <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 space-y-3">
-                        <span class="text-xs font-mono text-cyan-400">Sep 2023 - Jul 2024</span>
-                        <h3 class="text-lg font-bold text-white">Ketua Hubungan Masyarakat (HUMAS)</h3>
-                        <p class="text-xs text-slate-400">Himpunan Mahasiswa Teknik Informatika (HIMTI)</p>
-                        <ul class="list-disc list-inside text-xs text-slate-300 space-y-1">
-                            <li>Memimpin dan mengoordinasikan kegiatan bidang HUMAS.</li>
-                            <li>Menjalin komunikasi & kerja sama dengan pihak internal/eksternal.</li>
-                        </ul>
+                </div>
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-36 overflow-hidden relative"><img src="assets/arsip.jpg" alt="Arsip Dokumen" class="w-full h-full object-cover"></div>
+                    <div class="p-3.5 space-y-1">
+                        <h4 class="font-bold text-white text-xs flex items-center gap-1.5"><i class="fa-solid fa-folder-open text-cyan-400"></i> Arsip Dokumen</h4>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Verifikasi dokumen dan pengelolaan arsip berkas secara sistematis.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-36 overflow-hidden relative"><img src="assets/pelayanan.jpeg" alt="Pelayanan Masyarakat" class="w-full h-full object-cover"></div>
+                    <div class="p-3.5 space-y-1">
+                        <h4 class="font-bold text-white text-xs flex items-center gap-1.5"><i class="fa-solid fa-handshake text-cyan-400"></i> Pelayanan Masyarakat</h4>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Pemberian layanan awal, konsultasi, dan komunikasi responsif kepada publik.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-36 overflow-hidden relative"><img src="assets/notulen.jpg" alt="Notulen Rapat" class="w-full h-full object-cover"></div>
+                    <div class="p-3.5 space-y-1">
+                        <h4 class="font-bold text-white text-xs flex items-center gap-1.5"><i class="fa-solid fa-file-lines text-cyan-400"></i> Notulen Rapat</h4>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Pencatatan hasil rapat, poin pembahasan, dan dokumentasi agenda resmi.</p>
+                    </div>
+                </div>
+                <a href="https://babelpos.bacakoran.co/opini/read/21846/pelayanan-publik-berbasis-aplikasi-mempermudah-atau-menambah-beban" target="_blank" class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden group block shadow-md hover:border-cyan-500/50 transition sm:col-span-2">
+                    <div class="h-36 overflow-hidden relative">
+                        <img src="assets/opini.jpeg" alt="Opini Publik" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <span class="px-3 py-1.5 bg-cyan-500 text-slate-950 font-bold text-xs rounded-xl shadow-lg flex items-center gap-1.5">🌐 Buka Web Opini</span>
+                        </div>
+                    </div>
+                    <div class="p-3.5 space-y-1">
+                        <h4 class="font-bold text-white text-xs flex items-center gap-1.5"><i class="fa-solid fa-lightbulb text-cyan-400"></i> Perumusan Opini Publik</h4>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Penyusunan gagasan, analisis isu, dan perumusan opini publik terkait pelayanan dan pengawasan penyelenggaraan negara.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="pt-2 text-right">
+            <button onclick="closeModal('modalMagang')" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold rounded-xl transition">Tutup</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal DPM -->
+<div id="modalDPM" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-3xl w-full p-6 space-y-4 max-h-[90vh] overflow-y-auto">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <h3 class="text-lg font-bold text-cyan-400 flex items-center gap-2">
+                <i class="fa-solid fa-gavel text-cyan-400"></i> Rekam Kegiatan & Dokumentasi - Komisi I DPM
+            </h3>
+            <button onclick="closeModal('modalDPM')" class="text-slate-400 hover:text-white text-xl font-bold">&times;</button>
+        </div>
+        <div class="space-y-4 text-xs sm:text-sm text-slate-300">
+            <p class="text-slate-400 leading-relaxed">Berikut adalah rincian agenda strategis, penyusunan regulasi, serta pelaksanaan program kerja selama menjabat sebagai Ketua Komisi I Legislasi DPM ISB Atma Luhur.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-36 overflow-hidden relative"><img src="assets/sop.jpeg" alt="Penyusunan SOP Ormawa" class="w-full h-full object-cover"></div>
+                    <div class="p-3.5 space-y-1">
+                        <h4 class="font-bold text-white text-xs flex items-center gap-1.5"><i class="fa-solid fa-file-contract text-cyan-400"></i> Perancangan SOP & Peraturan Ormawa</h4>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Merumuskan Standar Operasional Prosedur (SOP) serta menyusun peraturan organisasi agar tata kelola kegiatan di kampus berjalan tertib, jelas, dan terarah.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-36 overflow-hidden relative"><img src="assets/monitoring.jpeg" alt="Pelaksanaan KPUM" class="w-full h-full object-cover"></div>
+                    <div class="p-3.5 space-y-1">
+                        <h4 class="font-bold text-white text-xs flex items-center gap-1.5"><i class="fa-solid fa-check-to-slot text-cyan-400"></i> Pengawasan & Pelaksanaan KPUM</h4>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Mengawal jalannya Komisi Pemilihan Umum Mahasiswa (KPUM) serta membantu menyusun aturan pemilihan agar proses demokrasi di kampus berjalan jujur dan lancar.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-md sm:col-span-2">
+                    <div class="h-36 overflow-hidden relative"><img src="assets/rapat.jpeg" alt="Rapat Komisi dan Pleno" class="w-full h-full object-cover"></div>
+                    <div class="p-3.5 space-y-1">
+                        <h4 class="font-bold text-white text-xs flex items-center gap-1.5"><i class="fa-solid fa-users-rectangle text-cyan-400"></i> Rapat Koordinasi Komisi</h4>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Memimpin jalannya rapat koordinasi internal Komisi I untuk membahas program kerja, mengevaluasi aturan, serta menyamakan langkah antar anggota.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="pt-2 flex items-center justify-between border-t border-slate-800">
+            <a href="assets/sk.pdf" target="_blank" class="text-xs text-cyan-400 hover:underline flex items-center gap-1">
+                <i class="fa-solid fa-folder-open"></i> Buka Surat Keputusan (SK)
+            </a>
+            <button onclick="closeModal('modalDPM')" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold rounded-xl transition">Tutup</button>
+        </div>
+    </div>
+</div>
 
-
-    <!-- Dokumen & Sertifikat -->
-    <section id="dokumen" class="max-w-7xl mx-auto px-6 py-12 mb-12">
-        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 space-y-6">
-            <h2 class="text-2xl font-bold text-cyan-400">Sertifikat & Dokumen Pendukung</h2>
-            <div class="grid md:grid-cols-3 gap-6 text-sm">
-                <div class="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
-                    <i class="fa-solid fa-file-contract text-2xl text-cyan-400"></i>
-                    <h3 class="font-bold text-white">Sertifikat Kompetensi Teknologi Informasi dan Komunikasi</h3>
-                    <p class="text-xs text-slate-400">Memiliki Sertifikasi Kompetensi Resmi Computer Literate Certified Profesional (CLCP) Level III IQF pada bidang Komputer Aplikasi Perkantoran Jenjang III KKNI, yang membuktikan keahlian tingkat lanjut dalam pengoperasian teknologi informasi dan aplikasi perkantoran..</p>
-                    <div class="pt-2">
-                            <a href="assets/sertifikat-clcp.pdf" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
-                                <i class="fa-solid fa-eye"></i> Lihat Sertifikat
-                            </a>
+<!-- Modal HIMTI -->
+<div id="modalHIMTI" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-3xl w-full p-6 space-y-4 max-h-[90vh] overflow-y-auto">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <h3 class="text-lg font-bold text-cyan-400 flex items-center gap-2">
+                <i class="fa-solid fa-hand-holding-heart text-cyan-400"></i> Rekam Jejak & Kegiatan Sosial - Humas HIMTI
+            </h3>
+            <button onclick="closeModal('modalHIMTI')" class="text-slate-400 hover:text-white text-xl font-bold">&times;</button>
+        </div>
+        <div class="space-y-4 text-xs sm:text-sm text-slate-300">
+            <p class="text-slate-400 leading-relaxed">Berikut adalah dokumentasi dan rincian program kerja sosial serta pengabdian masyarakat yang saya pimpin dan gagas selama menjabat sebagai Ketua Humas HIMTI.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-36 overflow-hidden relative"><img src="assets/pengabdian.jpeg" alt="Pengabdian Masyarakat HIMTI" class="w-full h-full object-cover"></div>
+                    <div class="p-3.5 space-y-1">
+                        <h4 class="font-bold text-white text-xs flex items-center gap-1.5"><i class="fa-solid fa-people-group text-cyan-400"></i> Panitia Pengabdian Masyarakat</h4>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Berperan aktif sebagai panitia inti dalam mengorganisasi kegiatan pengabdian kepada masyarakat, menjalin komunikasi, serta memastikan acara berjalan sukses.</p>
                     </div>
                 </div>
-                <div class="p-5 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
-                    <i class="fa-solid fa-certificate text-2xl text-cyan-400"></i>
-                    <h3 class="font-bold text-white">Sertifikat Atma Luhur English Proficiency Test (ALEPT) </h3>
-                    <p class="text-xs text-slate-400">Membuktikan kemampuan komunikasi lisan dan tulisan berbahasa Inggris untuk mendukung literasi teknologi global.</p>
-                    <div class="pt-2">
-                            <a href="assets/toefl.jpeg" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
-                                <i class="fa-solid fa-eye"></i> Lihat Sertifikat
-                            </a>
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-36 overflow-hidden relative"><img src="assets/inisiasi.jpeg" alt="Berbagi Takjil dan Sembako" class="w-full h-full object-cover"></div>
+                    <div class="p-3.5 space-y-1">
+                        <h4 class="font-bold text-white text-xs flex items-center gap-1.5"><i class="fa-solid fa-gift text-cyan-400"></i> Inisiasi Program Berbagi Sembako & Takjil</h4>
+                        <p class="text-[11px] text-slate-400 leading-relaxed">Mengusulkan dan menginisiasikan aksi sosial pembagian takjil serta paket sembako sebagai wujud kepedulian nyata mahasiswa terhadap masyarakat yang membutuhkan.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+
+<script>
+    function openModal(modalId) {
+        document.getElementById(modalId).classList.remove('hidden');
+    }
+    function closeModal(modalId) {
+        document.getElementById(modalId).classList.add('hidden');
+    }
+</script>
+
+    <!-- ================= SECTION: SERTIFIKAT & DOKUMEN PENDUKUNG ================= -->
+<section id="sertifikat" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    
+    <!-- Judul Section -->
+    <div class="mb-10 text-center space-y-2">
+        <span class="text-xs font-mono text-cyan-400 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Kredensial & Validasi</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white">Sertifikat & Dokumen Pendukung</h2>
+        <p class="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto">
+            Dokumentasi resmi, sertifikasi kompetensi keahlian, dan kelulusan pelatihan profesional yang telah saya tempuh.
+        </p>
+    </div>
+
+    <!-- Grid 3 Kartu Sertifikat -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+       <!-- Kartu 1: Sertifikat Kompetensi TI (CLCP) -->
+<div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 flex flex-col justify-between space-y-6 hover:border-cyan-500/50 transition duration-300 shadow-lg">
+    <div class="space-y-4">
+        <!-- Perbaikan pada class ikon di bawah ini -->
+        <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl">
+            <i class="fa-solid fa-file-lines"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white">Sertifikat Kompetensi Teknologi Informasi dan Komunikasi</h3>
+        <p class="text-xs text-slate-300 leading-relaxed">
+            Memiliki Sertifikasi Kompetensi Resmi Computer Literate Certified Profesional (CLCP) Level III IQF pada bidang Komputer Aplikasi Perkantoran Jenjang III KKNI, yang membuktikan keahlian tingkat lanjut dalam pengoperasian teknologi informasi dan aplikasi perkantoran.
+        </p>
+    </div>
+    <div>
+        <a href="assets/sertifikat-clcp.pdf" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+            <i class="fa-solid fa-eye"></i> Lihat Sertifikat
+        </a>
+    </div>
+</div>
+
+        <!-- Kartu 2: Nusatalent Mini Bootcamp (Front-End Developer) -->
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 flex flex-col justify-between space-y-6 hover:border-cyan-500/50 transition duration-300 shadow-lg">
+            <div class="space-y-4">
+                <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white">Nusatalent Mini Bootcamp: Intro to Front-End Developer</h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    Sertifikat kelulusan resmi dari Nusatalent Batch 2 supported by Pajar Camp, yang membuktikan kompetensi dasar hingga menengah dalam pengembangan antarmuka web modern (Front-End Development).
+                </p>
+            </div>
+            <div>
+                <a href="assets/pelatihan.jpg" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+                    <i class="fa-solid fa-eye"></i> Lihat Sertifikat
+                </a>
+            </div>
+        </div>
+
+        <!-- Kartu 3: Atma Luhur English Proficiency Test (ALEPT) -->
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 flex flex-col justify-between space-y-6 hover:border-cyan-500/50 transition duration-300 shadow-lg sm:col-span-2 lg:col-span-1">
+            <div class="space-y-4">
+                <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white">Atma Luhur English Proficiency Test (ALEPT)</h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                    Membuktikan kemampuan komunikasi lisan dan tulisan berbahasa Inggris untuk mendukung literasi teknologi global dan kolaborasi profesional.
+                </p>
+            </div>
+            <div>
+                <a href="assets/toefl.jpeg" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+                    <i class="fa-solid fa-eye"></i> Lihat Sertifikat
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="border-t border-slate-800 bg-slate-950 py-8 text-center text-xs text-slate-500 font-mono">
